@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f5f4ee">
+  <title>Экономика в движении — викторина</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="topbar">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">↻</span> Экономика в движении</div>
+      <div class="offline-note">Работает офлайн</div>
+    </header>
+    <main class="layout">
+      <section>
+        <div class="intro">
+          <div class="eyebrow"><span></span> Интерактивная викторина</div>
+          <h1>Цикличность развития национального хозяйства</h1>
+          <p>Проверьте, как экономика проходит через подъёмы и спады. 20 вопросов — от основ делового цикла до антикризисной политики.</p>
+        </div>
+        <div class="quiz-card">
+          <div class="quiz-content" id="quizContent">
+            <div class="question-top">
+              <div class="question-count">Вопрос <strong id="currentNumber">1</strong> <span>из 20</span></div>
+              <div class="tag" id="topicTag">Основы циклов</div>
+            </div>
+            <div class="progress-track" role="progressbar" aria-label="Прогресс викторины" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0" id="progressTrack">
+              <div class="progress-bar" id="progressBar"></div>
+            </div>
+            <div id="questionArea" class="fade-in">
+              <h2 id="questionText"></h2>
+              <div class="answers" id="answers" role="group" aria-label="Варианты ответа"></div>
+            </div>
+            <div class="feedback" id="feedback" aria-live="polite"></div>
+            <div class="actions">
+              <button class="primary" id="nextButton" type="button" disabled>
+                Следующий вопрос
+                <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="result" id="result" aria-live="polite"></div>
+        </div>
+      </section>
+      <aside class="sidebar" aria-label="О викторине">
+        <div class="side-label">Коротко о теме</div>
+        <h2 class="side-title">Экономика движется волнами</h2>
+        <div class="fact">
+          <div class="fact-icon" aria-hidden="true">↗</div>
+          <div><strong>Не прямая линия</strong><p>Выпуск, занятость и инвестиции меняются со временем.</p></div>
+        </div>
+        <div class="fact">
+          <div class="fact-icon" aria-hidden="true">◷</div>
+          <div><strong>Разные горизонты</strong><p>Краткие колебания и долгие волны имеют разные причины.</p></div>
+        </div>
+        <div class="fact">
+          <div class="fact-icon" aria-hidden="true">✳</div>
+          <div><strong>Знание помогает</strong><p>Понимание цикла важно для решений бизнеса и государства.</p></div>
+        </div>
+        <div class="side-quote">«Экономический цикл — это колебания деловой активности вокруг долгосрочного тренда».<em>Ключевая идея макроэкономики</em></div>
+      </aside>
+    </main>
+  </div>
+</body>
+</html>
